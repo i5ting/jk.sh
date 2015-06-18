@@ -14,9 +14,7 @@ do
     echo "$PORT service was already started"
   else
     echo "$PORT service was not started"
-    
     `curl http://127.0.0.1:5001/request_verify_token\?tel\=186xxxx3333`
-    # `open /Applications/Thunder.app`
     sleep 600
   fi
   sleep 6
